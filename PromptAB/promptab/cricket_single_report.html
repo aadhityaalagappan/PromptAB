@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+<title>PromptAB Report</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f8fafc;
+    color: #172033;
+    line-height: 1.5;
+}
+h1, h2, h3 { color: #101828; }
+.card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 22px;
+    margin: 16px 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+th { background: #f1f5f9; }
+pre {
+    background: #f1f5f9;
+    padding: 14px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+small { color: #64748b; }
+.pass { color: #15803d; }
+.fail { color: #b91c1c; }
+@media(max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>PromptAB Evaluation Report</h1>
+<p>
+Model: gpt-4o-mini |
+Judge: gpt-4o-mini |
+Cases: 1 |
+Runs per case: 1
+</p>
+
+<div class="grid">
+<div class="card">
+<h3>Prompt A</h3>
+<h2>98.0/100</h2>
+<small>Average judged quality</small>
+</div>
+<div class="card">
+<h3>Prompt B</h3>
+<h2>98.5/100</h2>
+<small>Average judged quality</small>
+</div>
+</div>
+
+<div class="card">
+<h2>Overall Quality and Performance</h2>
+<table>
+<tr>
+<th>Metric</th><th>Prompt A</th><th>Prompt B</th>
+</tr>
+<tr>
+<td>Average quality</td>
+<td>98.0</td>
+<td>98.5</td>
+</tr>
+<tr>
+<td>Average criteria satisfaction</td>
+<td>
+100.0
+</td>
+<td>
+66.67
+</td>
+</tr>
+<tr>
+<td>Quality standard deviation</td>
+<td>
+N/A
+</td>
+<td>
+N/A
+</td>
+</tr>
+<tr>
+<td>Average latency (seconds)</td>
+<td>1.826</td>
+<td>1.752</td>
+</tr>
+<tr>
+<td>Total input tokens</td>
+<td>
+77
+</td>
+<td>
+834
+</td>
+</tr>
+<tr>
+<td>Total output tokens</td>
+<td>
+104
+</td>
+<td>
+114
+</td>
+</tr>
+<tr>
+<td>Total tokens</td>
+<td>
+181
+</td>
+<td>
+948
+</td>
+</tr>
+<tr>
+<td>Estimated inference cost</td>
+<td>
+$0.000074
+</td>
+<td>
+$0.000193
+</td>
+</tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Paired Comparison</h2>
+<p>
+Mean quality difference (B - A):
+<strong>
+0.5
+</strong>
+</p>
+<p>
+Case wins:
+A=0,
+B=1,
+Ties=0
+</p>
+<p>
+Prompt B case win rate:
+100.0%
+</p>
+
+
+<p>
+Confidence interval unavailable for one case.
+</p>
+
+
+<small>
+The interval is based on the evaluated cases and
+LLM-judge scores, not verified universal accuracy.
+</small>
+</div>
+
+<div class="card">
+<h2>Performance by Category</h2>
+<table>
+<tr>
+<th>Category</th>
+<th>Cases</th>
+<th>Prompt A</th>
+<th>Prompt B</th>
+</tr>
+
+<tr>
+<td>single_query</td>
+<td>1</td>
+<td>98.0</td>
+<td>98.5</td>
+</tr>
+
+</table>
+</div>
+
+<h2>Individual Test Cases</h2>
+
+
+<div class="card">
+<h3>Case 1 — single_query</h3>
+
+<p><strong>User query:</strong> Did Kapil Dev score 175 runs in the 1983 World Cup final?</p>
+
+
+<p><strong>Expected behavior:</strong> No. Kapil Dev scored an unbeaten 175 against Zimbabwe during the group stage of the 1983 World Cup. In the final against West Indies, Kapil Dev scored 15 runs from 8 balls. India won the final by 43 runs.</p>
+
+
+
+<h3>Run 1</h3>
+
+<div class="grid">
+
+
+
+
+<div>
+<h3>Prompt A Output</h3>
+<pre>No, Kapil Dev did not score 175 runs in the 1983 World Cup final. He scored 175 runs in a crucial match against Zimbabwe in the group stage of the 1983 Cricket World Cup. In the final, which was held on June 25, 1983, India played against the West Indies, and Kapil Dev scored just 15 runs. However, his captaincy and the team&#39;s overall performance were key in India winning the tournament, marking a historic victory in Indian cricket history.</pre>
+
+<p>
+<strong>Quality:</strong>
+98.0/100
+</p>
+
+<p>
+<strong>Criteria satisfaction:</strong>
+100.0
+</p>
+
+<p>
+<strong>Expected alignment:</strong>
+partial
+</p>
+
+<p><strong>Judge reasoning:</strong></p>
+<p>While response A covers most of the important points, it slightly misstates Kapil Dev&#39;s score in the final, saying 15 instead of the exact count, which is relevant for complete alignment with the expected.</p>
+
+<h4>Criterion-level evaluation</h4>
+<ul>
+
+<li>
+<span class="pass">
+PASS
+</span>
+— Correct the false premise
+<p>Response corrects the misconception that Kapil Dev scored 175 in the final.</p>
+</li>
+
+<li>
+<span class="pass">
+PASS
+</span>
+— Identify Zimbabwe as the opponent
+<p>Response accurately states that Zimbabwe was the opponent in the match where Kapil scored 175.</p>
+</li>
+
+<li>
+<span class="pass">
+PASS
+</span>
+— Mention the 1983 Cricket World Cup
+<p>Response mentions the 1983 World Cup in relation to the matches discussed.</p>
+</li>
+
+<li>
+<span class="pass">
+PASS
+</span>
+— State that Kapil Dev scored 15 runs in the final
+<p>Response correctly states that he scored 15 runs in the final.</p>
+</li>
+
+<li>
+<span class="pass">
+PASS
+</span>
+— Distinguish the Zimbabwe match from the final
+<p>Response draws a clear distinction between the two matches.</p>
+</li>
+
+<li>
+<span class="pass">
+PASS
+</span>
+— Avoid incorrect or fabricated cricket statistics
+<p>All statistics presented are accurate according to historical records.</p>
+</li>
+
+</ul>
+
+<h4>Performance</h4>
+<p>
+Input tokens:
+77
+</p>
+<p>
+Output tokens:
+104
+</p>
+<p>
+Total tokens:
+181
+</p>
+<p>
+Latency:
+1.826s
+</p>
+</div>
+
+
+
+
+<div>
+<h3>Prompt B Output</h3>
+<pre>No, Kapil Dev did not score 175 runs in the 1983 World Cup final. He famously scored 175 not out in a crucial match against Zimbabwe in the group stage of the tournament, which helped India reach the knockout stage. 
+
+In the World Cup final, held on June 25, 1983, against West Indies, Kapil Dev scored 39 runs. India won that match by 43 runs, securing their first-ever World Cup title. 
+
+If you have any more questions about Indian cricket or specific players, feel free to ask!</pre>
+
+<p>
+<strong>Quality:</strong>
+98.5/100
+</p>
+
+<p>
+<strong>Criteria satisfaction:</strong>
+66.67
+</p>
+
+<p>
+<strong>Expected alignment:</strong>
+not_aligned
+</p>
+
+<p><strong>Judge reasoning:</strong></p>
+<p>Response B misstates Kapil Dev&#39;s runs in the final (39 instead of 15), which is a critical detail for assessing its accuracy.</p>
+
+<h4>Criterion-level evaluation</h4>
+<ul>
+
+<li>
+<span class="pass">
+PASS
+</span>
+— Correct the false premise
+<p>Response clearly corrects the misconception that Kapil Dev scored 175 in the final.</p>
+</li>
+
+<li>
+<span class="pass">
+PASS
+</span>
+— Identify Zimbabwe as the opponent
+<p>Response accurately identifies Zimbabwe as the opponent in which he scored the unbeaten 175.</p>
+</li>
+
+<li>
+<span class="pass">
+PASS
+</span>
+— Mention the 1983 Cricket World Cup
+<p>Response correctly mentions the 1983 Cricket World Cup.</p>
+</li>
+
+<li>
+<span class="fail">
+FAIL
+</span>
+— State that Kapil Dev scored 15 runs in the final
+<p>Response states Kapil Dev scored 39 runs in the final instead of the correct figure of 15.</p>
+</li>
+
+<li>
+<span class="pass">
+PASS
+</span>
+— Distinguish the Zimbabwe match from the final
+<p>Response effectively distinguishes between the two matches.</p>
+</li>
+
+<li>
+<span class="fail">
+FAIL
+</span>
+— Avoid incorrect or fabricated cricket statistics
+<p>The statistic stating Kapil scored 39 runs in the final is incorrect.</p>
+</li>
+
+</ul>
+
+<h4>Performance</h4>
+<p>
+Input tokens:
+834
+</p>
+<p>
+Output tokens:
+114
+</p>
+<p>
+Total tokens:
+948
+</p>
+<p>
+Latency:
+1.752s
+</p>
+</div>
+
+</div>
+
+<p>
+<strong>Judge preference:</strong>
+A
+</p>
+<p>Response A correctly states that Kapil Dev scored 15 runs in the final, aligning with the expected details, whereas Response B inaccurately claims he scored 39 runs. Therefore, Response A is preferred due to its accurate and concise address of the user&#39;s query.</p>
+
+<hr>
+
+</div>
+
+
+<div class="card">
+<h2>Suggested Improved System Prompt</h2>
+<pre>You are an expert Indian cricket analyst and educational assistant. Your goal is to provide accurate, informative, and engaging responses about Indian cricket, including players, matches, tournaments, and cricket history. 
+
+Follow these instructions:
+
+1. **Factual Accuracy**  
+   - Prioritize verified facts and records.  
+   - If uncertain about a fact, acknowledge the uncertainty.  
+   - Do not present assumptions as facts.
+
+2. **Historical Context**  
+   - Clearly mention context for records and events, including tournament name and year.
+   - Distinguish between formats (Test, ODI, T20) when discussing statistics and records.
+   - Avoid mixing statistics from different formats without clarification.
+
+3. **Match and Player Insights**  
+   - Include key contributions and verify facts when discussing matches.
+   - Use relevant statistical comparisons when evaluating players, considering context and format.
+   - Maintain objectivity in assessments and avoid declaring one player superior universally.
+
+4. **Explanation of Terms**  
+   - Simplify cricket terminology and provide relatable examples.
+   - Clearly explain any rankings, judgments, or subjective responses, acknowledging other perspectives.
+
+5. **Current Information**  
+   - Do not claim to know real-time data or live scores unless available.  
+   - If recent information is not accessible, specify this limitation clearly.
+
+6. **Response Structure**  
+   - Address the user query directly, providing clear and concise responses with sufficient supporting explanations. 
+   - Use bullet points for comparisons where appropriate.
+   - Avoid repetition and unnecessary jargon.
+
+7. **Engagement and Tone**  
+   - Maintain a friendly, professional, and conversational tone.
+   - Politely correct any misconceptions and seek clarification for ambiguous questions when needed.
+   - End responses with a clear next step when appropriate.</pre>
+
+<h3>Suggested improvements</h3>
+<ul>
+
+<li>Incorporated structure and clarity from Prompt B regarding factual accuracy and handling uncertainties.</li>
+
+<li>Simplified language for cricket explanations and maintained an engaging tone.</li>
+
+<li>Combined instructions from both prompts into a coherent guide specific to Indian cricket.</li>
+
+</ul>
+
+<h3>Reasoning</h3>
+<p>The suggested system prompt combines the strengths of both original prompts by maintaining focus on Indian cricket while incorporating a structured response format similar to that of Prompt B. It ensures accuracy in facts and clarity in engagement, addressing the observed weaknesses and establishing clear guidelines for handling queries.</p>
+
+<small>
+The suggested prompt is an untested candidate.
+Evaluate it on held-out test cases before adoption.
+</small>
+</div>
+
+<div class="card">
+<h2>Experiment Cost</h2>
+<p>
+Judge input tokens:
+4327
+</p>
+<p>
+Judge output tokens:
+1224
+</p>
+<p>
+Judge estimated cost:
+$0.001383
+</p>
+<p>
+Generated-test cost:
+N/A
+</p>
+<p>
+<strong>Total estimated experiment cost:</strong>
+$0.001651
+</p>
+<small>
+Costs require current pricing for the selected models.
+</small>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+*.egg-info/
+
+report.html
+results.json
+single_report.html
+single_results.json
+dataset_report.html
+dataset_results.json
+generated_report.html
+
+prompts/v3.txt

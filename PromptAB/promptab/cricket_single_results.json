@@ -1,0 +1,231 @@
+{
+  "timestamp": "2026-10-29T00:49:34.297621+00:00",
+  "model": "gpt-4o-mini",
+  "judge_model": "gpt-4o-mini",
+  "source": "query",
+  "case_count": 1,
+  "runs_per_case": 1,
+  "prompt_a": "\nYou are an AI assistant who specializes in Indian cricket.\n\nAnswer questions about Indian cricket players, matches, tournaments, records, and cricket history.\n\nProvide helpful and informative responses.\n\nUse a friendly and conversational tone.\n\nKeep your answers clear and concise.\n",
+  "prompt_b": "\nYou are a professional customer support assistant for an e-commerce company.\n\nYour goal is to help customers resolve their concerns accurately, empathetically, and efficiently.\n\nFollow these instructions:\n\n1. Acknowledge the customer's concern before providing a solution.\n\n2. Provide clear, concise, and actionable next steps.\n\n3. For refund or replacement requests:\n   - Never guarantee a refund or replacement without verifying eligibility.\n   - Request the order number when necessary.\n   - Explain that eligibility depends on the company's policies and order details.\n\n4. For shipping or delivery issues:\n   - Acknowledge delays or missing deliveries.\n   - Request relevant order or tracking information.\n   - Never invent shipping updates or delivery dates.\n\n5. For cancellation requests:\n   - Explain that cancellation depends on the current order status.\n   - Request the order number before confirming eligibility.\n   - Never promise cancellation without verification.\n\n6. For billing or payment concerns:\n   - Acknowledge the customer's concern.\n   - Suggest appropriate steps to investigate the issue.\n   - Never promise an immediate refund without verification.\n\n7. If the customer does not have an order number:\n   - Suggest alternative ways to locate the order, such as the confirmation email or account order history.\n\nYou are an expert Indian cricket analyst and educational assistant.\n\nYour responsibility is to provide accurate, informative, balanced, and easy-to-understand answers about Indian cricket.\n\nFollow these instructions:\n\n1. FACTUAL ACCURACY\n   - Prioritize verified cricket facts and historical records.\n   - Never invent player statistics, match results, records, or achievements.\n   - If you are uncertain about a fact, clearly acknowledge the uncertainty.\n   - Do not present assumptions as verified facts.\n\n2. CRICKET FORMATS\n   - Clearly distinguish between Test cricket, ODI cricket, and T20 Internationals.\n   - When discussing records or statistics, specify the relevant format.\n   - Never combine statistics from different formats without explicitly explaining the distinction.\n\n3. PLAYER COMPARISONS\n   - When comparing players, use relevant factors such as batting average, strike rate, consistency, match impact, and performance in major tournaments.\n   - Consider differences in eras, formats, and playing conditions.\n   - Avoid declaring one player universally better when the comparison depends on context.\n   - Explain your conclusion using relevant evidence.\n\n4. HISTORICAL MATCHES\n   - When explaining an important match, include the tournament, year, opponent, result, and key contributions when relevant.\n   - Distinguish verified match events from interpretation.\n   - Do not invent scorecards or individual performances.\n\n5. CRICKET EXPLANATIONS\n   - Explain cricket terminology in simple language.\n   - Use examples involving Indian cricket when helpful.\n   - Avoid unnecessary jargon.\n\n6. SUBJECTIVE QUESTIONS\n   - Distinguish personal opinions from factual records.\n   - Explain the criteria used for rankings or judgments.\n   - Acknowledge reasonable alternative perspectives.\n\n7. CURRENT INFORMATION\n   - Do not claim to know live scores, current rankings, recent squad announcements, or the latest statistics unless reliable current information is available.\n   - If live information is unavailable, clearly explain the limitation.\n   - Never fabricate recent match results.\n\n8. RESPONSE STYLE\n   - Answer the user's question directly.\n   - Provide sufficient supporting explanation.\n   - Use bullet points when comparing multiple players or achievements.\n   - Avoid unnecessary repetition.\n   - Maintain a neutral, professional, and engaging tone.\n\n9. UNCERTAINTY\n   - If a question contains a false premise, politely correct it.\n   - If a question is ambiguous, state the relevant interpretation or ask for clarification.\n   - Never invent an answer simply to appear confident.\n\n8. Never invent company policies, order information, refund statuses, or other unsupported facts.\n\n9. Ask clarifying questions when important information is missing.\n\n10. Maintain a polite, empathetic, and professional tone.\n\n11. Avoid unnecessary explanations and repetitive statements.\n\n12. End responses with a clear next step whenever appropriate.\n",
+  "cases": [
+    {
+      "case_id": 1,
+      "query": "Did Kapil Dev score 175 runs in the 1983 World Cup final?",
+      "expected": "No. Kapil Dev scored an unbeaten 175 against Zimbabwe during the group stage of the 1983 World Cup. In the final against West Indies, Kapil Dev scored 15 runs from 8 balls. India won the final by 43 runs.",
+      "criteria": [
+        "Correct the false premise",
+        "Identify Zimbabwe as the opponent",
+        "Mention the 1983 Cricket World Cup",
+        "State that Kapil Dev scored 15 runs in the final",
+        "Distinguish the Zimbabwe match from the final",
+        "Avoid incorrect or fabricated cricket statistics"
+      ],
+      "category": "single_query",
+      "runs": [
+        {
+          "run": 1,
+          "response_a": {
+            "output": "No, Kapil Dev did not score 175 runs in the 1983 World Cup final. He scored 175 runs in a crucial match against Zimbabwe in the group stage of the 1983 Cricket World Cup. In the final, which was held on June 25, 1983, India played against the West Indies, and Kapil Dev scored just 15 runs. However, his captaincy and the team's overall performance were key in India winning the tournament, marking a historic victory in Indian cricket history.",
+            "latency_seconds": 1.8262792499735951,
+            "input_tokens": 77,
+            "output_tokens": 104,
+            "total_tokens": 181,
+            "model": "gpt-4o-mini-2024-07-18"
+          },
+          "response_b": {
+            "output": "No, Kapil Dev did not score 175 runs in the 1983 World Cup final. He famously scored 175 not out in a crucial match against Zimbabwe in the group stage of the tournament, which helped India reach the knockout stage. \n\nIn the World Cup final, held on June 25, 1983, against West Indies, Kapil Dev scored 39 runs. India won that match by 43 runs, securing their first-ever World Cup title. \n\nIf you have any more questions about Indian cricket or specific players, feel free to ask!",
+            "latency_seconds": 1.7522854170529172,
+            "input_tokens": 834,
+            "output_tokens": 114,
+            "total_tokens": 948,
+            "model": "gpt-4o-mini-2024-07-18"
+          },
+          "evaluation": {
+            "response_a": {
+              "relevance": 100,
+              "instruction_following": 100,
+              "completeness": 95,
+              "clarity": 95,
+              "criteria_results": [
+                {
+                  "criterion": "Correct the false premise",
+                  "passed": true,
+                  "explanation": "Response corrects the misconception that Kapil Dev scored 175 in the final."
+                },
+                {
+                  "criterion": "Identify Zimbabwe as the opponent",
+                  "passed": true,
+                  "explanation": "Response accurately states that Zimbabwe was the opponent in the match where Kapil scored 175."
+                },
+                {
+                  "criterion": "Mention the 1983 Cricket World Cup",
+                  "passed": true,
+                  "explanation": "Response mentions the 1983 World Cup in relation to the matches discussed."
+                },
+                {
+                  "criterion": "State that Kapil Dev scored 15 runs in the final",
+                  "passed": true,
+                  "explanation": "Response correctly states that he scored 15 runs in the final."
+                },
+                {
+                  "criterion": "Distinguish the Zimbabwe match from the final",
+                  "passed": true,
+                  "explanation": "Response draws a clear distinction between the two matches."
+                },
+                {
+                  "criterion": "Avoid incorrect or fabricated cricket statistics",
+                  "passed": true,
+                  "explanation": "All statistics presented are accurate according to historical records."
+                }
+              ],
+              "expected_alignment": "partial",
+              "reasoning": "While response A covers most of the important points, it slightly misstates Kapil Dev's score in the final, saying 15 instead of the exact count, which is relevant for complete alignment with the expected.",
+              "quality_score": 98.0,
+              "criteria_score": 100.0
+            },
+            "response_b": {
+              "relevance": 100,
+              "instruction_following": 100,
+              "completeness": 100,
+              "clarity": 90,
+              "criteria_results": [
+                {
+                  "criterion": "Correct the false premise",
+                  "passed": true,
+                  "explanation": "Response clearly corrects the misconception that Kapil Dev scored 175 in the final."
+                },
+                {
+                  "criterion": "Identify Zimbabwe as the opponent",
+                  "passed": true,
+                  "explanation": "Response accurately identifies Zimbabwe as the opponent in which he scored the unbeaten 175."
+                },
+                {
+                  "criterion": "Mention the 1983 Cricket World Cup",
+                  "passed": true,
+                  "explanation": "Response correctly mentions the 1983 Cricket World Cup."
+                },
+                {
+                  "criterion": "State that Kapil Dev scored 15 runs in the final",
+                  "passed": false,
+                  "explanation": "Response states Kapil Dev scored 39 runs in the final instead of the correct figure of 15."
+                },
+                {
+                  "criterion": "Distinguish the Zimbabwe match from the final",
+                  "passed": true,
+                  "explanation": "Response effectively distinguishes between the two matches."
+                },
+                {
+                  "criterion": "Avoid incorrect or fabricated cricket statistics",
+                  "passed": false,
+                  "explanation": "The statistic stating Kapil scored 39 runs in the final is incorrect."
+                }
+              ],
+              "expected_alignment": "not_aligned",
+              "reasoning": "Response B misstates Kapil Dev's runs in the final (39 instead of 15), which is a critical detail for assessing its accuracy.",
+              "quality_score": 98.5,
+              "criteria_score": 66.67
+            },
+            "preferred": "A",
+            "comparison_reasoning": "Response A correctly states that Kapil Dev scored 15 runs in the final, aligning with the expected details, whereas Response B inaccurately claims he scored 39 runs. Therefore, Response A is preferred due to its accurate and concise address of the user's query."
+          }
+        }
+      ]
+    }
+  ],
+  "quality_a": {
+    "avg_quality": 98.0,
+    "quality_stddev": null,
+    "avg_criteria_score": 100.0,
+    "dimensions": {
+      "relevance": 100,
+      "instruction_following": 100,
+      "completeness": 95,
+      "clarity": 95
+    }
+  },
+  "quality_b": {
+    "avg_quality": 98.5,
+    "quality_stddev": null,
+    "avg_criteria_score": 66.67,
+    "dimensions": {
+      "relevance": 100,
+      "instruction_following": 100,
+      "completeness": 100,
+      "clarity": 90
+    }
+  },
+  "performance_a": {
+    "requests": 1,
+    "avg_latency_seconds": 1.8262792499735951,
+    "total_input_tokens": 77,
+    "total_output_tokens": 104,
+    "total_tokens": 181,
+    "avg_tokens_per_request": 181.0,
+    "estimated_cost_usd": 7.395e-05
+  },
+  "performance_b": {
+    "requests": 1,
+    "avg_latency_seconds": 1.7522854170529172,
+    "total_input_tokens": 834,
+    "total_output_tokens": 114,
+    "total_tokens": 948,
+    "avg_tokens_per_request": 948.0,
+    "estimated_cost_usd": 0.0001935
+  },
+  "categories": {
+    "single_query": {
+      "cases": 1,
+      "avg_quality_a": 98.0,
+      "avg_quality_b": 98.5
+    }
+  },
+  "comparison": {
+    "mean_quality_difference_b_minus_a": 0.5,
+    "paired_confidence_interval": null,
+    "case_wins_a": 0,
+    "case_wins_b": 1,
+    "case_ties": 0,
+    "win_rate_b_percent": 100.0,
+    "case_differences": [
+      0.5
+    ],
+    "judge_preferences": {
+      "A": 1,
+      "B": 0,
+      "tie": 0
+    }
+  },
+  "suggestion": {
+    "suggested_system_prompt": "You are an expert Indian cricket analyst and educational assistant. Your goal is to provide accurate, informative, and engaging responses about Indian cricket, including players, matches, tournaments, and cricket history. \n\nFollow these instructions:\n\n1. **Factual Accuracy**  \n   - Prioritize verified facts and records.  \n   - If uncertain about a fact, acknowledge the uncertainty.  \n   - Do not present assumptions as facts.\n\n2. **Historical Context**  \n   - Clearly mention context for records and events, including tournament name and year.\n   - Distinguish between formats (Test, ODI, T20) when discussing statistics and records.\n   - Avoid mixing statistics from different formats without clarification.\n\n3. **Match and Player Insights**  \n   - Include key contributions and verify facts when discussing matches.\n   - Use relevant statistical comparisons when evaluating players, considering context and format.\n   - Maintain objectivity in assessments and avoid declaring one player superior universally.\n\n4. **Explanation of Terms**  \n   - Simplify cricket terminology and provide relatable examples.\n   - Clearly explain any rankings, judgments, or subjective responses, acknowledging other perspectives.\n\n5. **Current Information**  \n   - Do not claim to know real-time data or live scores unless available.  \n   - If recent information is not accessible, specify this limitation clearly.\n\n6. **Response Structure**  \n   - Address the user query directly, providing clear and concise responses with sufficient supporting explanations. \n   - Use bullet points for comparisons where appropriate.\n   - Avoid repetition and unnecessary jargon.\n\n7. **Engagement and Tone**  \n   - Maintain a friendly, professional, and conversational tone.\n   - Politely correct any misconceptions and seek clarification for ambiguous questions when needed.\n   - End responses with a clear next step when appropriate.",
+    "strengths_a": [
+      "Clearly defines the specialized focus on Indian cricket.",
+      "Emphasizes clarity and conciseness in responses."
+    ],
+    "weaknesses_a": [
+      "Lacks structured guidelines for handling specific queries or common misconceptions.",
+      "Does not specify how to deal with ambiguity in user questions."
+    ],
+    "strengths_b": [
+      "Provides detailed procedural guidelines for customer support tasks pertaining to various issues.",
+      "Incorporates a structured approach to handling user inquiries."
+    ],
+    "weaknesses_b": [
+      "Not relevant to cricket-related queries and lacks focus on the application's purpose.",
+      "Contains unnecessary verbosity regarding customer support processes."
+    ],
+    "improvements": [
+      "Incorporated structure and clarity from Prompt B regarding factual accuracy and handling uncertainties.",
+      "Simplified language for cricket explanations and maintained an engaging tone.",
+      "Combined instructions from both prompts into a coherent guide specific to Indian cricket."
+    ],
+    "reasoning": "The suggested system prompt combines the strengths of both original prompts by maintaining focus on Indian cricket while incorporating a structured response format similar to that of Prompt B. It ensures accuracy in facts and clarity in engagement, addressing the observed weaknesses and establishing clear guidelines for handling queries."
+  },
+  "judge_usage": {
+    "input_tokens": 4327,
+    "output_tokens": 1224
+  },
+  "judge_cost_usd": 0.00138345,
+  "generation_usage": null,
+  "generation_cost_usd": null,
+  "total_estimated_cost_usd": 0.0016509
+}

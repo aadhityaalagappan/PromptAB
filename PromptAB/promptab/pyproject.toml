@@ -1,0 +1,32 @@
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "promptab"
+version = "0.1.0"
+description = "Evaluate, compare, and improve LLM system prompts"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "openai>=1.68.0,<3",
+    "pydantic>=2.0,<3",
+    "python-dotenv>=1.0,<2",
+    "jinja2>=3.1,<4",
+    "requests>=2.34.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "build>=1.0",
+    "twine>=5.0"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/promptab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

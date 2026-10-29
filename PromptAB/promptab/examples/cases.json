@@ -1,0 +1,120 @@
+
+[
+  {
+    "query": "Who captained India when they won their first ODI Cricket World Cup?",
+    "expected": "Kapil Dev captained India to their first ODI Cricket World Cup title in 1983.",
+    "criteria": [
+      "Identify Kapil Dev as the captain",
+      "Mention the year 1983",
+      "Identify the tournament as the ODI Cricket World Cup",
+      "Avoid unrelated or fabricated information"
+    ],
+    "category": "historical_facts"
+  },
+  {
+    "query": "Explain India's victory in the 1983 Cricket World Cup final.",
+    "expected": "India defeated West Indies by 43 runs at Lord's in 1983. India scored 183 and bowled West Indies out for 140. Kapil Dev captained India.",
+    "criteria": [
+      "Identify West Indies as the opponent",
+      "Mention India's 43-run victory",
+      "Include the correct match totals",
+      "Mention Kapil Dev's captaincy",
+      "Avoid fabricated match details"
+    ],
+    "category": "historical_matches"
+  },
+  {
+    "query": "Who contributed the most important innings in India's 2011 ODI World Cup final?",
+    "expected": "Both Gautam Gambhir's 97 and MS Dhoni's unbeaten 91 were crucial in India's six-wicket victory over Sri Lanka. The importance of either innings can be argued.",
+    "criteria": [
+      "Mention Gautam Gambhir's 97",
+      "Mention MS Dhoni's unbeaten 91",
+      "Identify Sri Lanka as the opponent",
+      "Recognize that the question involves subjective judgment",
+      "Explain the contributions rather than declaring an unsupported absolute winner"
+    ],
+    "category": "match_analysis"
+  },
+  {
+    "query": "Who is better, Sachin Tendulkar or Virat Kohli?",
+    "expected": "Explain that the comparison depends on the cricket format, era, statistics, longevity, and evaluation criteria. Both players have exceptional achievements.",
+    "criteria": [
+      "Recognize both players' achievements",
+      "Discuss differences between eras",
+      "Distinguish cricket formats where relevant",
+      "Use clear comparison criteria",
+      "Avoid unsupported claims of universal superiority"
+    ],
+    "category": "player_comparisons"
+  },
+  {
+    "query": "What is the difference between batting average and strike rate? Explain using Indian cricket players.",
+    "expected": "Batting average measures runs per dismissal, while batting strike rate measures runs scored per 100 balls faced. Explain with a simple example involving Indian batters.",
+    "criteria": [
+      "Correctly define batting average",
+      "Correctly define batting strike rate",
+      "Explain the difference between the two metrics",
+      "Include a simple Indian cricket example",
+      "Avoid confusing batting and bowling statistics"
+    ],
+    "category": "cricket_concepts"
+  },
+  {
+    "query": "Did Kapil Dev score 175 runs in the 1983 World Cup final?",
+    "expected": "No. Kapil Dev scored an unbeaten 175 against Zimbabwe during the 1983 World Cup, not in the final against West Indies.",
+    "criteria": [
+      "Correct the false premise",
+      "Identify Zimbabwe as the opponent for the 175-run innings",
+      "Distinguish the group-stage match from the final",
+      "Avoid repeating the false claim as fact"
+    ],
+    "category": "false_premises"
+  },
+  {
+    "query": "How did India win the 2024 Men's T20 World Cup final?",
+    "expected": "India defeated South Africa by seven runs in the 2024 Men's T20 World Cup final. India scored 176/7, with Virat Kohli contributing 76 runs.",
+    "criteria": [
+      "Identify South Africa as the opponent",
+      "Mention the seven-run victory",
+      "Mention India's 176/7 total",
+      "Mention Virat Kohli's 76",
+      "Identify the tournament as T20 rather than ODI"
+    ],
+    "category": "historical_matches"
+  },
+  {
+    "query": "What is the difference between ODI and Test cricket?",
+    "expected": "ODIs are limited-overs matches with 50 overs per side, while Test matches can last up to five days with two innings per team. Explain the strategic differences.",
+    "criteria": [
+      "Explain the 50-over limit in ODIs",
+      "Explain the five-day maximum for Test matches",
+      "Explain the innings structure",
+      "Describe a relevant strategic difference",
+      "Use beginner-friendly language"
+    ],
+    "category": "cricket_concepts"
+  },
+  {
+    "query": "Which Indian cricketer is the greatest captain of all time?",
+    "expected": "Explain that the answer is subjective and depends on criteria such as ICC titles, overseas performance, consistency, team development, and format. Discuss relevant Indian captains without inventing statistics.",
+    "criteria": [
+      "Recognize the subjective nature of the question",
+      "Establish criteria for evaluating captaincy",
+      "Discuss relevant Indian captains",
+      "Avoid invented achievements or statistics",
+      "Provide a balanced conclusion"
+    ],
+    "category": "subjective_rankings"
+  },
+  {
+    "query": "Who won yesterday's India cricket match? Give the exact scorecard.",
+    "expected": "If live or recent match information is unavailable, explain that the result cannot be verified and request the opponent or match date. Do not invent a scorecard.",
+    "criteria": [
+      "Avoid inventing a recent match result",
+      "Avoid fabricating player statistics or scorecards",
+      "Clearly communicate limitations when current information is unavailable",
+      "Suggest a way to verify the result"
+    ],
+    "category": "uncertainty_handling"
+  }
+]
